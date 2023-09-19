@@ -85,7 +85,7 @@ export default function Home() {
     <>
       <main className="flex flex-col items-center justify-center h-screen relative overflow-clip">
         <Wave className="absolute -z-10 rotate-[15deg] opacity-30 w-[700%] md:w-[500%] lg:w-[200%] wave-animation"/>
-        <h1 className="text-7xl lg:text-8xl text-center gradient-text">Oi, Sou o <strong>Guilherme</strong></h1>
+        <h1 className="text-6xl lg:text-8xl text-center gradient-text">Oi, Sou o <strong>Guilherme</strong></h1>
         <div className="flex flex-col lg:flex-row justify-center items-center my-14">
           <h2 className="text-2xl text-primary-100 font-semibold flex-grow-0 shrink">Engenheiro da Computação</h2>
           <ul className="flex justify-center items-center ms-8 flex-grow shrink-0">
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
         <Button.root href="#about">
           <Button.label label="Saiba mais !" className="text-xl"/>
-          <Button.icon name="chevron-down" className="w-6 h-6 ms-4 slide-in-top"/>
+          <Button.icon name="chevron-down" className="w-6 h-6 ms-4 slide-in-top text-sm lg:text-base"/>
         </Button.root>
         <span className="absolute w-[32px] h-[2px] bg-primary-400 bottom-8" />
       </main>
@@ -107,8 +107,8 @@ export default function Home() {
       <section id="about" className="relative py-12 mb-80 overflow-x-clip">
         <div className="container grid grid-cols-12 gap-6">
           <div className="col-start-2 col-span-10">
-            <h1 className="text-7xl text-center mb-8 gradient-text">Sobre mim</h1>
-            <p className="text-xl text-center text-grey-200">Sou um <strong>Engenheiro de Computação</strong> e desenvolvedor de aplicações web altamente qualificado, apaixonado por criar <strong>experiências excepcionais</strong>, e solucionar problemas de forma criativa. Minha expertise abrange tanto o <strong>front-end</strong> quanto o <strong>back-end</strong>.</p>
+            <h1 className="text-5xl lg:text-7xl text-center mb-8 gradient-text">Sobre mim</h1>
+            <p className="text-base lg:text-xl text-center text-grey-200">Sou um <strong>Engenheiro de Computação</strong> e desenvolvedor de aplicações web altamente qualificado, apaixonado por criar <strong>experiências excepcionais</strong>, e solucionar problemas de forma criativa. Minha expertise abrange tanto o <strong>front-end</strong> quanto o <strong>back-end</strong>.</p>
           </div>
         </div>
 
@@ -124,8 +124,8 @@ export default function Home() {
               <summary className="w-full cursor-pointer flex justify-between items-center">
                 <div className="flex flex-col">  
                   <span className="w-[32px] h-[2px] bg-primary-400 mb-6"/>
-                  <h1 className="text-4xl text-primary-200 font-semibold mb-4">EDUCAÇÃO</h1>
-                  <p className="text-grey-200"><strong>Engenharia da Computação</strong> ‧ 2016 - 2021</p>
+                  <h1 className="text-2xl lg:text-4xl text-primary-200 font-semibold mb-4">EDUCAÇÃO</h1>
+                  <p className="text-xs lg:text-base text-grey-200"><strong>Engenharia da Computação</strong> ‧ 2016 - 2021</p>
                 </div>
                 <ChevronDown width="48px" className="icon-chevron"/>
               </summary>
@@ -139,8 +139,8 @@ export default function Home() {
               <summary className="w-full cursor-pointer flex justify-between items-center">
                 <div className="flex flex-col shrink">
                   <span className="w-[32px] h-[2px] bg-primary-400 mb-6"/>
-                  <h1 className="text-4xl text-primary-200 font-semibold mb-4 uppercase">Experiência Profissional</h1>
-                  <p className="text-grey-200"><strong>TAG TECH - Desenvolvimento e Tecnologia</strong> ‧  Remoto ‧ 2021 - atualmente</p>
+                  <h1 className="text-2xl lg:text-4xl text-primary-200 font-semibold mb-4 uppercase">Experiência Profissional</h1>
+                  <p className="text-xs lg:text-base text-grey-200"><strong>TAG TECH - Desenvolvimento e Tecnologia</strong> ‧  Remoto ‧ 2021 - atualmente</p>
                 </div>
                 <ChevronDown width="48px" className="icon-chevron shrink-0"/>
               </summary>
@@ -156,7 +156,7 @@ export default function Home() {
 
         <div className="container mt-32 flex flex-col items-center">
           <Button.root href={`mailto:${contact.email}`}>
-            <Button.label label="Entre em contato !" className="text-xl" />
+            <Button.label label="Entre em contato !" className="text-sm lg:text-base" />
             <Button.icon name="send" className="w-6 h-6 ms-4 send"/>
           </Button.root>
         </div>
@@ -168,12 +168,12 @@ export default function Home() {
         <span className="spot absolute top-[500px] -right-[1500px] -z-20 w-[2000px] h-[2000px] opacity-5"/>
         <div className="container grid grid-cols-12 gap-6 mb-6 items-center">
           <div className="col-span-12 lg:col-span-5">
-            <h1 className="skils-title text-7xl text-center lg:text-left gradient-text mb-6">Habilidades</h1>
+            <h1 className="skils-title text-5xl lg:text-7xl text-center lg:text-left gradient-text mb-6">Habilidades</h1>
             <div className="flex items-center justify-between rounded-full px-8 py-6 card-cta backdrop-blur-sm">
-              <span className="me-8 shrink">Vamos fazer algo incrível juntos !</span>
+              <span className="me-8 shrink text-xs lg:text-base">Vamos fazer algo incrível juntos !</span>
               <div className="shrink-0">
                 <Button.root size="sm" fill={true} href={`mailto:${contact.email}`}>
-                  <Button.label label="Fale comigo" className="text-grey-700"/>
+                  <Button.label label="Fale comigo" className="text-grey-700 text-xs lg:text-base"/>
                 </Button.root>
               </div>
             </div>
@@ -213,7 +213,7 @@ export default function Home() {
             <button className="hidden md:block" onClick={() => handlerPrevSlider()}>
               <Button.icon name="btn-chevron-right" />
             </button>
-            <h1 className="text-7xl text-center gradient-text">Trabalhos recentes</h1>
+            <h1 className="text-5xl lg:text-7xl text-center gradient-text">Trabalhos recentes</h1>
             <button className="hidden md:block" onClick={() => handlerNextSlider()}>
               <Button.icon name="btn-chevron-right" className="rotate-180"/>
             </button>
