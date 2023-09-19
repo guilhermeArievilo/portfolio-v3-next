@@ -71,7 +71,8 @@ export default function Home() {
           start: "center center",
           end: "+=100%",
           scrub: true,
-          pin: true
+          pin: true,
+          snap: .5
         }
       })
     })
@@ -137,12 +138,12 @@ export default function Home() {
 
             <details className="mt-24">
               <summary className="w-full cursor-pointer flex justify-between items-center">
-                <div className="flex flex-col">
+                <div className="flex flex-col shrink">
                   <span className="w-[32px] h-[2px] bg-primary-400 mb-6"/>
                   <h1 className="text-4xl text-primary-200 font-semibold mb-4 uppercase">Experiência Profissional</h1>
                   <p className="text-grey-200"><strong>TAG TECH - Desenvolvimento e Tecnologia</strong> ‧  Remoto ‧ 2021 - atualmente</p>
                 </div>
-                <ChevronDown width="48px" className="icon-chevron"/>
+                <ChevronDown width="48px" className="icon-chevron shrink-0"/>
               </summary>
               <ul className="ms-4 mt-8 text-grey-300">
                 <li>Manutenção de sites e testes</li>
@@ -211,11 +212,11 @@ export default function Home() {
       <section id="recent-works" className="py-44">
         <div className="relative container flex flex-col items-center col-span-12">
           <div className="flex justify-between items-center mb-8 w-full">
-            <button onClick={() => handlerPrevSlider()}>
+            <button className="hidden md:block" onClick={() => handlerPrevSlider()}>
               <Button.icon name="btn-chevron-right" />
             </button>
             <h1 className="text-7xl text-center gradient-text">Trabalhos recentes</h1>
-            <button onClick={() => handlerNextSlider()}>
+            <button className="hidden md:block" onClick={() => handlerNextSlider()}>
               <Button.icon name="btn-chevron-right" className="rotate-180"/>
             </button>
           </div>
