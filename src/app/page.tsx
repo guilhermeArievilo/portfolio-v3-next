@@ -119,7 +119,7 @@ export default function Home() {
             <span className="vertial-text mt-6">Clique para mais detalhes</span>
           </div>
 
-          <div className="col-span-12 mx-4 lg:col-span-11">
+          <div className="col-span-12 lg:col-span-11">
             <details>
               <summary className="w-full cursor-pointer flex justify-between items-center">
                 <div className="flex flex-col">  
@@ -166,10 +166,10 @@ export default function Home() {
       <section ref={skilsSection} id="skils" className="pt-32 pb-12 relative flex flex-col items-center overflow-x-clip">
         <DarkLogo className="absolute -z-10 opacity-20 stroke-primary-300"/>
         <span className="spot absolute top-[500px] -right-[1500px] -z-20 w-[2000px] h-[2000px] opacity-5"/>
-        <div className="container grid grid-cols-12 gap-6 mb-6 items-center mx-4">
+        <div className="container grid grid-cols-12 gap-6 mb-6 items-center">
           <div className="col-span-12 lg:col-span-5">
             <h1 className="skils-title text-7xl text-center lg:text-left gradient-text mb-6">Habilidades</h1>
-            <div className="flex items-center justify-between rounded-full mx-4 lg:mx-0 px-8 py-6 card-cta backdrop-blur-sm">
+            <div className="flex items-center justify-between rounded-full px-8 py-6 card-cta backdrop-blur-sm">
               <span className="me-8 shrink">Vamos fazer algo incrível juntos !</span>
               <div className="shrink-0">
                 <Button.root size="sm" fill={true} href={`mailto:${contact.email}`}>
