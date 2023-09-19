@@ -6,7 +6,6 @@ import Linkedin from "@/assets/svg/icons/linkedin.svg"
 import Git from "@/assets/svg/icons/github.svg"
 import { Button } from "./button";
 import MenuIcon from "@/assets/svg/icons/menu.svg"
-import Retangle from '@/assets/svg/elements/retangle.svg'
 
 import { useState, useEffect } from "react";
 import { usePathname, useSearchParams } from 'next/navigation';
@@ -62,7 +61,6 @@ export default function Header () {
       </header>
 
       <div className={`${activeMenu ? 'relative flex flex-col justify-around items-center h-full' : 'hidden'} flex md:hidden w-full pb-24`}>
-        <Retangle className="retangle absolute -z-10 bottom-28"/>
         <nav className="basis-60">
           <ul className="flex flex-col items-center justify-between h-full">
             <li className="mx-8 hover:-translate-y-1 transition-all ease-in-out">

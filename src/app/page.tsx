@@ -71,8 +71,7 @@ export default function Home() {
           start: "center center",
           end: "+=100%",
           scrub: true,
-          pin: true,
-          snap: .5
+          pin: true
         }
       })
     })
@@ -161,7 +160,6 @@ export default function Home() {
             <Button.icon name="send" className="w-6 h-6 ms-4 send"/>
           </Button.root>
         </div>
-
         <Retangle className="retangle absolute -bottom-96 left-1/2 -translate-x-1/2 -z-10"/>
       </section>
 
