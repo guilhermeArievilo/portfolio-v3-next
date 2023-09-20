@@ -9,7 +9,7 @@ interface ButtonRootProps {
 }
 
 export default function ButtonRoot ({ children, href, size, fill }: ButtonRootProps) {
-  const className = `flex justify-center items-center ${size == 'sm' ? 'px-6 py-2' : 'px-8 py-6'} ${fill ? 'bg-grey-100' : ''} rounded-full border-grey-100 border hover:scale-105 transition-all ease-in-out`
+  const className = `flex justify-center items-center ${size == 'sm' ? 'px-5 lg:px-6 py-2' : 'px-7 lg:px-8 py-4 lg:py-6'} ${fill ? 'bg-grey-100' : ''} rounded-full border-grey-100 border hover:scale-105 transition-all ease-in-out`
    if (!href) return (
     <button className={className}>
       {children}
