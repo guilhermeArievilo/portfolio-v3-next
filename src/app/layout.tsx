@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={`${raleway.className}`}>
+      <body className={`${raleway.className} relative`}>
         <Header />
         {children}
         <Footer />

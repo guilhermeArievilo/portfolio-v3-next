@@ -67,7 +67,7 @@ export default function Header () {
   }, [])
 
   return (
-    <div className={`${activeMenu ? 'fixed bg-[#070708] md:bg-opacity-0 h-screen z-30' : ''} w-full`}>
+    <div className={`${activeMenu ? 'fixed bg-[#070708] md:bg-opacity-0 h-screen z-30' : 'absolute'} w-full top-0 left-0`}>
       <header ref={header} className="container flex justify-between items-center py-8">
         <Link id="logo" href='#'>
           <Image src={'/logo.svg'} alt="Eng Guilherme Arievilo" width={95} height={40}/>
