@@ -1,6 +1,5 @@
 'use client'
 import { Button } from "@/components/button";
-import Wave from '@/assets/svg/elements/wave.svg'
 import ChevronDown from '@/assets/svg/icons/chevron-down.svg'
 import Retangle from '@/assets/svg/elements/retangle.svg'
 import DarkLogo from '@/assets/svg/elements/dark-logo.svg'
@@ -15,6 +14,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import MainSection from "@/components/sections/main-section";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -83,30 +83,11 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex flex-col items-center justify-center h-screen relative overflow-clip">
-        <Wave className="absolute -z-10 rotate-[15deg] opacity-30 w-[700%] md:w-[500%] lg:w-[200%] wave-animation"/>
-        <h1 className="text-6xl lg:text-8xl text-center gradient-text">Oi, Sou o <strong>Guilherme</strong></h1>
-        <div className="flex flex-col lg:flex-row justify-center items-center my-14">
-          <h2 className="text-2xl text-primary-100 font-semibold flex-grow-0 shrink">Engenheiro da Computação</h2>
-          <ul className="flex justify-center items-center ms-8 flex-grow shrink-0">
-            <li className="separator px-3">
-              <span className="font-light text-sm">Desenvolvedor Full-Stack</span>
-            </li>
-            <li className="px-3">
-              <span className="font-light text-sm">UI Developer</span>
-            </li>
-          </ul>
-        </div>
-        <Button.root href="#about">
-          <Button.label label="Saiba mais !" className="text-xl"/>
-          <Button.icon name="chevron-down" className="w-6 h-6 ms-4 slide-in-top text-sm lg:text-base"/>
-        </Button.root>
-        <span className="absolute w-[32px] h-[2px] bg-primary-400 bottom-8" />
-      </main>
+      <MainSection />
 
       <section id="about" className="relative py-12 mb-80 overflow-x-clip">
         <div className="container grid grid-cols-12 gap-6">
-          <div className="col-start-2 col-span-10">
+          <div className="col-span-12 lg:col-start-2 lg:col-span-10">
             <h1 className="text-5xl lg:text-7xl text-center mb-8 gradient-text">Sobre mim</h1>
             <p className="text-base lg:text-xl text-center text-grey-200">Sou um <strong>Engenheiro de Computação</strong> e desenvolvedor de aplicações web altamente qualificado, apaixonado por criar <strong>experiências excepcionais</strong>, e solucionar problemas de forma criativa. Minha expertise abrange tanto o <strong>front-end</strong> quanto o <strong>back-end</strong>.</p>
           </div>
@@ -127,11 +108,11 @@ export default function Home() {
                   <h1 className="text-2xl lg:text-4xl text-primary-200 font-semibold mb-4">EDUCAÇÃO</h1>
                   <p className="text-xs lg:text-base text-grey-200"><strong>Engenharia da Computação</strong> ‧ 2016 - 2021</p>
                 </div>
-                <ChevronDown width="48px" className="icon-chevron"/>
+                <ChevronDown className="icon-chevron shrink-0 w-8 lg:w-12"/>
               </summary>
               <ul className="ms-4 mt-8 text-grey-300">
-                <li>Area1 - Faculdade de Ciência e Tecnologia</li>
-                <li>Salvador, BA</li>
+                <li className="text-sm lg:text-base">Area1 - Faculdade de Ciência e Tecnologia</li>
+                <li className="text-sm lg:text-base">Salvador, BA</li>
               </ul>
             </details>
 
@@ -142,13 +123,13 @@ export default function Home() {
                   <h1 className="text-2xl lg:text-4xl text-primary-200 font-semibold mb-4 uppercase">Experiência Profissional</h1>
                   <p className="text-xs lg:text-base text-grey-200"><strong>TAG TECH - Desenvolvimento e Tecnologia</strong> ‧  Remoto ‧ 2021 - atualmente</p>
                 </div>
-                <ChevronDown width="48px" className="icon-chevron shrink-0"/>
+                <ChevronDown className="icon-chevron shrink-0 w-8 lg:w-12"/>
               </summary>
               <ul className="ms-4 mt-8 text-grey-300">
-                <li>Manutenção de sites e testes</li>
-                <li>Desenvolvimento de CMS e micro serviços para sites</li>
-                <li>Desenvolvimento de frontend e integração com o backend</li>
-                <li>Desenvolvimento de backend e micro-serviços</li>
+                <li className="text-sm lg:text-base">Manutenção de sites e testes</li>
+                <li className="text-sm lg:text-base">Desenvolvimento de CMS e micro serviços para sites</li>
+                <li className="text-sm lg:text-base">Desenvolvimento de frontend e integração com o backend</li>
+                <li className="text-sm lg:text-base">Desenvolvimento de backend e micro-serviços</li>
               </ul>
             </details>
           </div>
@@ -164,7 +145,7 @@ export default function Home() {
       </section>
 
       <section ref={skilsSection} id="skils" className="pt-32 pb-12 relative flex flex-col items-center overflow-x-clip">
-        <DarkLogo className="absolute -z-10 opacity-20 stroke-primary-300"/>
+        <DarkLogo className="absolute -z-10 opacity-20 stroke-primary-300 w-100 hidden md:block"/>
         <span className="spot absolute top-[500px] -right-[1500px] -z-20 w-[2000px] h-[2000px] opacity-5"/>
         <div className="container grid grid-cols-12 gap-6 mb-6 items-center">
           <div className="col-span-12 lg:col-span-5">
