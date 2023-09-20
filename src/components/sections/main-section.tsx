@@ -58,7 +58,7 @@ export default function MainSection () {
     <main ref={main} className="flex flex-col items-center justify-center h-screen relative overflow-clip pb-24">
       <Wave className="absolute -z-10 rotate-[15deg] opacity-30 w-[700%] md:w-[500%] lg:w-[200%] wave-animation"/>
       <h1 className="text-6xl lg:text-8xl text-center gradient-text">Oi, Sou o <strong>Guilherme</strong></h1>
-      <div className="flex flex-col lg:flex-row justify-center items-center my-14">
+      <div className="flex flex-col lg:flex-row justify-center items-center my-5 lg:my-14">
         <h2 className="text-2xl text-primary-100 font-semibold flex-grow-0 shrink">Engenheiro da Computação</h2>
         <ul className="flex justify-center items-center ms-8 flex-grow shrink-0">
           <li className="separator px-3">
