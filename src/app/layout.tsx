@@ -18,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
+    <head>
+      <meta name="google-site-verification" content="ogbKCdvZLMyBftXbG62m6si3e7ajEHVwLwScVlbfdN0" />
+    </head>
       <body className={`${raleway.className} relative`}>
         <Header />
         {children}
